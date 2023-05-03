@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    
+    <title>CRUDs</title>
+    <script src="main.js" defer>  </script>
+</head>
+<h1>Social Media APP in JS Cruds </h1>
+<div class="container">
+
+    <div class="left">
+        <form id="form">
+          <label for="post"> Write your post here</label>
+          <br><br>
+          <textarea name="post" id="input" cols="30" rows="10"></textarea>
+          <br> <br>
+          <div id="msg"></div>
+          <button type="submit">Post</button>
+        </form>
+      </div>
+<!--Now, we're gonna make some sample
+ posts with delete and edit icons. Write this code inside the div with the id #posts: 👇-->
+    <div class="right">
+        <h3>Your Post Here</h3>
+        <div id="post"></div>
+    
+    <div id="posts">
+        <div>
+          <p>Hello world post 1</p>
+          <span class="options">
+            <i class="fas fa-edit" onclick="editPost(this)"></i>
+            <i class="fas fa-trash-alt" onclick="deletePost(this)"></i>
+            
+          </span>
+        </div>
+      
+        <div >
+          <p>Hello world post 2</p>
+          <span class="options">
+            <i class="fas fa-edit"  onClick="editPost(this)"></i>
+            <i class="fas fa-trash-alt" onClick="deletePost(this)"></i>
+           
+             <!--which displays an icon of a pencil, commonly
+             used to represent an edit or modify action-->
+            
+          </span>
+        </div>
+      </div>
+      
+    </div>
+
+</div>
+
+<body>
+    
+</body>
+</html>
